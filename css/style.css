@@ -1,0 +1,227 @@
+/* Variable */
+:root {
+  --primary-color: #FFF2F1;
+  --size-paragraph: 1.3rem;
+  --size-title: 6rem;
+}
+
+/* Generic class */
+.d-flex {
+  display: flex;
+}
+
+.jc-between {
+  justify-content: space-between;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.margin-none {
+  margin: 0;
+}
+
+/* Detail ajust */
+body {
+  color: var(--primary-color);
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+canvas {
+  display: flex;
+  position: absolute;
+  z-index: -1;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 30px 30px 0px;
+}
+
+header > p {
+  font-size: var(--size-paragraph);
+}
+
+header > div > div:first-child > p:first-child {
+  margin: 0 2rem 0 0;
+}
+
+header > div > div:first-child > p:nth-child(2) {
+  margin: 0 2.5rem 0 0;
+}
+
+/* Burger */
+.burger {
+  width: 40px;
+  height: 25px;
+  cursor: pointer;
+  position: relative;
+}
+
+.burger > span {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.burger > span::before, .burger > span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-color);
+  transition: transform 0.5s ease-in-out;
+}
+
+.burger > span::after {
+  transform: translateY(20px);
+}
+
+.burger.active > span::before {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.burger.active > span::after {
+  transform: translateY(10px) rotate(-45deg);
+}
+
+/* NavLink */
+nav {
+  background: linear-gradient(45deg, #2da3b4 0%, #423567 50%, black 100%);
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  transition: transform 1s ease-in-out;
+}
+
+nav.active {
+  transform: translateX(-100%);
+}
+
+nav > ul {
+  text-align: center;
+}
+
+nav > ul > li {
+  font-size: 5.5rem;
+  line-height: 1.7;
+}
+
+#breadcrumbs {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#breadcrumbs ul {
+  width: 40px;
+  height: 130px;
+  align-items: end;
+}
+#breadcrumbs ul li {
+  width: 20px;
+  height: 3px;
+  background-color: #707070;
+}
+#breadcrumbs ul li.active {
+  width: 100%;
+  background-color: var(--primary-color);
+}
+
+.content-section {
+  margin-left: 10%;
+  width: 100%;
+  max-width: calc(50% - 10%);
+}
+.content-section h1, .content-section h2 {
+  font-size: var(--size-title);
+}
+.content-section span {
+  display: block;
+  margin: 3rem 0;
+  width: 85px;
+  height: 13px;
+  background-color: #E76F51;
+  transform: rotate(-45deg);
+  border-radius: 7px;
+}
+.content-section p {
+  font-size: var(--size-paragraph);
+}
+
+.illustration-content {
+  margin-right: 10%;
+  width: 100%;
+  max-width: calc(50% -10%);
+  position: relative;
+  z-index: -1;
+}
+
+.rotate-c {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  border-radius: 999px;
+  background-color: #eee;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  animation: spin-bob 2.5s linear infinite;
+  box-shadow: 0 0 100px 0 rgba(255, 255, 255, 0.4);
+}
+
+.rotate-o {
+  position: absolute;
+  top: 125px;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 1em;
+  background-color: #eee;
+  margin-left: -5px;
+  box-shadow: 0 4px 0 4px #eee , 0 8px 0 16px #eee , 0 12px 0 24px #292929 , 0 16px 0 32px #eee , 0 20px 0 40px #292929 , 0 24px 0 48px #eee , 0 28px 0 56px #292929 , 0 32px 0 64px #eee , 0 36px 0 72px #292929 , 0 40px 0 80px #eee , 0 44px 0 88px #292929 , 0 48px 0 96px #eee , 0 52px 0 104px #292929 , 0 56px 0 112px #eee , 0 60px 0 120px #292929 , 0 64px 0 128px #eee , 0 68px 0 136px #292929 , 0 72px 0 144px #eee , 0 76px 0 152px #292929 , 0 80px 0 160px #eee , 0 84px 0 168px #292929 , 0 88px 0 176px #eee , 0 92px 0 184px #292929 , 0 96px 0 192px #eee , 0 100px 0 200px #292929 , 0 104px 0 208px #eee , 0 108px 0 216px #292929 , 0 112px 0 224px #eee , 0 116px 0 232px #292929 , 0 120px 0 240px #eee;
+}
+
+@keyframes spin-bob {
+  0% {
+    transform: rotate(0deg) scale(0.95) translate3d(0, 10px, 0);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.05) translate3d(0, -10px, 0);
+  }
+  100% {
+    transform: rotate(360deg) scale(0.95) translate3d(0, 10px, 0);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

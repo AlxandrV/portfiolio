@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VIGNEAUD Alexandre Portfolio</title>
     <link rel="stylesheet" href="fullpage/fullpage.min.css" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- Canvas for background animation -->
@@ -24,6 +24,7 @@
                 <span></span>
             </div>
         </div>
+        <!-- navLinks -->
         <nav class="d-flex jc-center align-center">
             <ul id="navLinks" class="margin-none">
                 <li><a class="disable" href="#home">HOME</a></li>
@@ -34,14 +35,40 @@
         </nav>
     </header>
 
+    <!-- breadcrumbs -->
+    <div id="breadcrumbs">
+        <ul class="d-flex column jc-between">
+            <li><a href="#home"></a></li>
+            <li><a href="#project"></a></li>
+            <li><a href="#about"></a></li>
+            <li><a href="#contact"></a></li>
+        </ul>
+    </div>
+
     <!-- Main JQuery Fullpage.js -->
     <main id="fullpage">
         <section class="section" data-anchor="home">
-            <p><a href="#">Hello</a></p></section>
+            <div class="d-flex jc-between">
+                <div class="content-section">
+                    <h1 class="margin-none">VIGNEAUD ALEXANDRE</h1>
+                    <div class="d-flex">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <p>developpeur web / web mobile</p>
+                </div>
+                <div class="illustration-content">
+                    <div class="rotate-c">
+                        <div class=" rotate-o"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="section" data-anchor="project">2</section>
         <section class="section" data-anchor="about">3</section>
         <section class="section" data-anchor="contact">4</section>
     </main>
+
         
     <script src="animation/animation.js"></script>
 	<script src="fullpage/fullpage.min.js"></script>

@@ -19,4 +19,4 @@ const disable = document.querySelector('#navLinks');
 disable.addEventListener('click', () => {	
 	burger.classList.remove('active');
 	nav.classList.remove('active');
-})
+});

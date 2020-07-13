@@ -1,3 +1,4 @@
+//  Animation canvas
 var c = document.getElementById("canvas-club");
 var ctx = c.getContext("2d");
 var w = c.width = window.innerWidth;
@@ -104,3 +105,4 @@ window.addEventListener("resize", resize);
 
 setup();
 anim();
+
