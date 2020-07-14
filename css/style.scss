@@ -179,32 +179,7 @@ nav > ul > li > a:hover::after{
 .short-media{
     display: none;
 }
-
-// breadcrumbs
-#breadcrumbs{
-    position: fixed;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-
-    ul{
-        width: 40px;
-        height: 130px;
-        align-items: end;
-
-        li{
-            width: 20px;
-            height: 3px;
-            background-color: #707070;
-        }
-        
-        li.active{
-            width: 100%;
-            background-color: var(--primary-color);
-        }
-    }
-}
-
+//  Content section
 .content-section{
     margin-left: 10%;
     width: 100%;
@@ -251,6 +226,7 @@ nav > ul > li > a:hover::after{
     }
 }
 
+// Illustration section
 .illustration-content{
     display: block;
     margin-right: 10%;

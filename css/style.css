@@ -174,27 +174,6 @@ nav > ul > li > a:hover::after {
   display: none;
 }
 
-#breadcrumbs {
-  position: fixed;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-#breadcrumbs ul {
-  width: 40px;
-  height: 130px;
-  align-items: end;
-}
-#breadcrumbs ul li {
-  width: 20px;
-  height: 3px;
-  background-color: #707070;
-}
-#breadcrumbs ul li.active {
-  width: 100%;
-  background-color: var(--primary-color);
-}
-
 .content-section {
   margin-left: 10%;
   width: 100%;
