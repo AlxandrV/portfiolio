@@ -1,7 +1,7 @@
 // vanilla JavaScript Fullpage
 new fullpage('#fullpage', {
 	// options here
-	ancres :['home', 'project', 'about', 'contact']
+	ancres :['home', 'project', 'contact']
 });
 
 // Function burger active

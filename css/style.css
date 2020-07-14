@@ -1,7 +1,7 @@
 /* Variable */
 :root {
   --primary-color: #FFF2F1;
-  --secondary-color: #80FFE8;
+  --secondary-color: #7CD1DE;
   --size-paragraph: 1.3rem;
   --size-title: 6rem;
 }
@@ -184,7 +184,7 @@ nav > ul > li > a:hover::after {
 .content-section {
   margin-left: 10%;
   width: 100%;
-  max-width: calc(50% - 10%);
+  max-width: calc(45% - 10%);
 }
 .content-section h1, .content-section h2 {
   font-size: var(--size-title);
@@ -204,6 +204,15 @@ nav > ul > li > a:hover::after {
 .content-section p a:hover {
   color: var(--secondary-color);
   transition: 0.5s;
+}
+
+.right {
+  margin-right: 10%;
+  margin-left: 0;
+  align-items: end;
+}
+.right span {
+  transform: rotate(45deg);
 }
 
 .illustration-content {
