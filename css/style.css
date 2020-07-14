@@ -233,5 +233,70 @@ nav > ul > li {
     transform: rotate(360deg) scale(0.95) translate3d(0, 10px, 0);
   }
 }
+.window {
+  height: 400px;
+  width: 200px;
+  position: absolute;
+  top: 50px;
+  left: 300px;
+  filter: brightness(0.3);
+  transition: filter 300ms ease-out;
+  animation: 3s infinite move-window linear;
+}
+
+.window::before {
+  margin: 0 auto;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 400px;
+  width: 200px;
+  background-image: url(https://i.ndtvimg.com/i/2017-12/plane-window-view-pixabay-650_650x400_71512105946.jpg?output-quality=70&output-format=webp);
+  background-position: center center;
+  filter: grayscale(100%);
+  border-radius: 35%;
+}
+
+.window-inside {
+  position: relative;
+  height: 100%;
+  border-radius: 35%;
+}
+
+.rain {
+  z-index: 200;
+  position: absolute;
+  top: 100px;
+  left: -100px;
+  height: 200px;
+  width: 400px;
+  border-radius: 35%;
+  transform: rotate(-90deg);
+  background-image: url(https://media.giphy.com/media/K9AnZe1fuZb68/giphy.gif);
+}
+
+@keyframes move-window {
+  0% {
+    left: 297px;
+    top: 50px;
+  }
+  25% {
+    left: 303px;
+    top: 52px;
+  }
+  50% {
+    left: 303px;
+    top: 50px;
+  }
+  75% {
+    left: 297px;
+    top: 52px;
+  }
+  100% {
+    left: 297px;
+    top: 50px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

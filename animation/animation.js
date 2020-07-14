@@ -106,3 +106,58 @@ window.addEventListener("resize", resize);
 setup();
 anim();
 
+// Animation third section
+const myWindow = document.querySelector('.window');
+
+function timeout(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+const getRandomNumber = (bottom, top, round)  => {
+  if(round){
+      return Math.round(Math.random() * (top - bottom));
+    } else {
+      return Math.random() * (top - bottom);
+    }
+  }
+
+
+const lightningCrashes = async () => {
+
+    if(Math.random() < .3){
+      //big flash
+      let firstFlash = getRandomNumber(3, 4) + 3;
+      myWindow.style.filter = `brightness(${firstFlash})`; 
+      await timeout(100);
+      let secondFlash = getRandomNumber(1, 2) + 1;
+      myWindow.style.filter = `brightness(${secondFlash})`;
+      await timeout(50);
+      let thirdFlash = getRandomNumber(1, 3) + 1;
+      myWindow.style.filter = `brightness(${thirdFlash})`;
+      await timeout(50);
+      let fourthFlash = getRandomNumber(2, 3) + 2;
+      myWindow.style.filter = `brightness(${fourthFlash})`;
+      await timeout(700);
+    } else {
+      //smaller flash
+      let firstFlash = getRandomNumber(2, 3) + 2;
+      myWindow.style.filter = `brightness(${firstFlash})`; 
+      await timeout(100);
+      let secondFlash = getRandomNumber(1, 2) + 1;
+      myWindow.style.filter = `brightness(${secondFlash})`;
+      await timeout(50);
+      let thirdFlash = getRandomNumber(2, 3) + 2;
+      myWindow.style.filter = `brightness(${thirdFlash})`;
+      await timeout(50);
+  }
+  //back to baseline
+  myWindow.style.filter = 'brightness(.3)'; 
+}
+
+(function mainLoop(){
+  const rand = getRandomNumber(1000, 4000, true) + 1000;
+  setTimeout(function() {
+    lightningCrashes();
+    mainLoop();  
+  }, rand);
+}());
