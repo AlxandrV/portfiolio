@@ -185,11 +185,23 @@ nav > ul > li{
 }
 
 .illustration-content{
+    display: block;
     margin-right: 10%;
     width: 100%;
-    max-width: calc(50% -10%);
+    max-width: calc(50% - 10%);
     position: relative;
     z-index: -1;
+    height: 75vh;
+
+    p{
+        width: 100%;
+        height: 100%;
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
 }
 
 @function multiple-shadow ($n) {
