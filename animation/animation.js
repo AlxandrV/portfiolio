@@ -3,7 +3,7 @@ var c = document.getElementById("canvas-club");
 var ctx = c.getContext("2d");
 var w = c.width = window.innerWidth;
 var h = c.height = window.innerHeight;
-var clearColor = 'rgba(0, 0, 0, .1)';
+var clearColor = '#28203f';
 var max = 30;
 var drops = [];
 
@@ -17,7 +17,7 @@ O.prototype = {
 	init: function() {
 		this.x = random(0, w);
 		this.y = 0;
-		this.color = 'rgb(164, 164, 164)';
+		this.color = '#347e9a';
 		this.w = 2;
 		this.h = 1;
 		this.vy = random(4, 5);
@@ -43,7 +43,7 @@ O.prototype = {
 				this.x - this.w / 2, this.y - this.h / 2,
 				this.x, this.y - this.h / 2);
 
-			ctx.strokeStyle = 'rgb(164, 164, 164)';
+			ctx.strokeStyle = '#347e9a';
 			ctx.stroke();
 			ctx.closePath();
 			
@@ -105,59 +105,3 @@ window.addEventListener("resize", resize);
 
 setup();
 anim();
-
-// Animation third section
-const myWindow = document.querySelector('.window');
-
-function timeout(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
-}
-
-const getRandomNumber = (bottom, top, round)  => {
-  if(round){
-      return Math.round(Math.random() * (top - bottom));
-    } else {
-      return Math.random() * (top - bottom);
-    }
-  }
-
-
-const lightningCrashes = async () => {
-
-    if(Math.random() < .3){
-      //big flash
-      let firstFlash = getRandomNumber(3, 4) + 3;
-      myWindow.style.filter = `brightness(${firstFlash})`; 
-      await timeout(100);
-      let secondFlash = getRandomNumber(1, 2) + 1;
-      myWindow.style.filter = `brightness(${secondFlash})`;
-      await timeout(50);
-      let thirdFlash = getRandomNumber(1, 3) + 1;
-      myWindow.style.filter = `brightness(${thirdFlash})`;
-      await timeout(50);
-      let fourthFlash = getRandomNumber(2, 3) + 2;
-      myWindow.style.filter = `brightness(${fourthFlash})`;
-      await timeout(700);
-    } else {
-      //smaller flash
-      let firstFlash = getRandomNumber(2, 3) + 2;
-      myWindow.style.filter = `brightness(${firstFlash})`; 
-      await timeout(100);
-      let secondFlash = getRandomNumber(1, 2) + 1;
-      myWindow.style.filter = `brightness(${secondFlash})`;
-      await timeout(50);
-      let thirdFlash = getRandomNumber(2, 3) + 2;
-      myWindow.style.filter = `brightness(${thirdFlash})`;
-      await timeout(50);
-  }
-  //back to baseline
-  myWindow.style.filter = 'brightness(.3)'; 
-}
-
-(function mainLoop(){
-  const rand = getRandomNumber(1000, 4000, true) + 1000;
-  setTimeout(function() {
-    lightningCrashes();
-    mainLoop();  
-  }, rand);
-}());
