@@ -10,8 +10,8 @@
 :root {
   --primary-color: #FFF2F1;
   --secondary-color: #7CD1DE;
-  --size-paragraph: 1.3rem;
-  --size-title: 6rem;
+  --size-paragraph: 1.15rem;
+  --size-title: 4.5rem;
 }
 
 /* Generic class */
@@ -179,9 +179,9 @@ nav > ul > li > a:hover::after {
 }
 
 .content-section {
-  margin-left: 10%;
+  margin-left: 5%;
   width: 100%;
-  max-width: calc(45% - 10%);
+  max-width: calc(50% - 6%);
 }
 .content-section h1, .content-section h2 {
   font-size: var(--size-title);
@@ -213,7 +213,7 @@ nav > ul > li > a:hover::after {
 }
 
 .maps-content {
-  margin-right: 10%;
+  margin-right: 5%;
   max-width: calc(50% - 10%);
   position: relative;
   z-index: -1;
@@ -225,7 +225,7 @@ nav > ul > li > a:hover::after {
 }
 
 .right {
-  margin-right: 10%;
+  margin-right: 5%;
   margin-left: 0;
   align-items: end;
 }
@@ -265,13 +265,18 @@ nav > ul > li > a:hover::after {
   text-transform: uppercase;
   font-size: var(--size-paragraph);
 }
+.form #hidden {
+  visibility: collapse;
+  font-size: 1rem;
+  color: lawngreen;
+}
 .form input[type=submit]:hover {
   background-color: rgba(128, 222, 217, 0.747);
 }
 
 .illustration-content {
   display: block;
-  margin-right: 10%;
+  margin-right: 5%;
   width: 100%;
   max-width: calc(50% - 10%);
   position: relative;
@@ -345,7 +350,7 @@ nav > ul > li > a:hover::after {
 }
 @media (max-width: 1199.98px) {
   :root {
-    --size-title: 5rem;
+    --size-title: 4rem;
   }
 
   .content-section {
