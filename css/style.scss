@@ -183,6 +183,10 @@ nav > ul > li > a:hover::after{
 .short-media{
     display: none;
 }
+
+section{
+    height: 100vh;
+}
 //  Content section
 .content-section{
     margin-left: 5%;
@@ -200,7 +204,7 @@ nav > ul > li > a:hover::after{
 
     span{
         display: block;
-        margin: 3rem 0;
+        margin: 1.5rem 0;
         width: 85px;
         height: 13px;
         background-color: var(--secondary-color);
@@ -282,7 +286,7 @@ nav > ul > li > a:hover::after{
     }
     
     #hidden{
-        visibility: collapse;
+        display: none;
         font-size: 1rem;
         color: lawngreen;
     }
@@ -402,6 +406,13 @@ nav > ul > li > a:hover::after{
     }
 }
 
+@media(max-width: 991.98px){
+    #icon > img{
+        height: 120px;
+        width: auto;
+    }
+}
+
 @media(max-width: 777.98px){
     .media-min{
         .content-section{
@@ -452,6 +463,10 @@ nav > ul > li > a:hover::after{
         }
     }
 
+    #icon, .maps-content{
+        display: none;
+    }
+
 }
 
 @media(max-width: 575.98px){
@@ -474,6 +489,10 @@ nav > ul > li > a:hover::after{
         p:nth-of-type(2){
             margin: 10px;
         }
+    }
+
+    .content-section p{
+        line-height: 1.5rem;
     }
 
 }

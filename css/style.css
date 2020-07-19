@@ -178,6 +178,10 @@ nav > ul > li > a:hover::after {
   display: none;
 }
 
+section {
+  height: 100vh;
+}
+
 .content-section {
   margin-left: 5%;
   width: 100%;
@@ -192,7 +196,7 @@ nav > ul > li > a:hover::after {
 }
 .content-section span {
   display: block;
-  margin: 3rem 0;
+  margin: 1.5rem 0;
   width: 85px;
   height: 13px;
   background-color: var(--secondary-color);
@@ -266,7 +270,7 @@ nav > ul > li > a:hover::after {
   font-size: var(--size-paragraph);
 }
 .form #hidden {
-  visibility: collapse;
+  display: none;
   font-size: 1rem;
   color: lawngreen;
 }
@@ -362,6 +366,12 @@ nav > ul > li > a:hover::after {
     margin-right: 5%;
   }
 }
+@media (max-width: 991.98px) {
+  #icon > img {
+    height: 120px;
+    width: auto;
+  }
+}
 @media (max-width: 777.98px) {
   .media-min .content-section h2 {
     font-size: 4rem;
@@ -404,6 +414,10 @@ nav > ul > li > a:hover::after {
   .media-min .short-media p:nth-of-type(2) {
     margin: 10px;
   }
+
+  #icon, .maps-content {
+    display: none;
+  }
 }
 @media (max-width: 575.98px) {
   :root {
@@ -423,6 +437,10 @@ nav > ul > li > a:hover::after {
   }
   .short-media p:nth-of-type(2) {
     margin: 10px;
+  }
+
+  .content-section p {
+    line-height: 1.5rem;
   }
 }
 

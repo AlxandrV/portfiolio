@@ -47,7 +47,7 @@ form.addEventListener('submit', function(e){
 			message.value = '';        
 
 			const hidden = document.getElementById('hidden');
-			hidden.style.visibility = 'visible';
+			hidden.style.display = 'inline';
 		}
     });
 });
