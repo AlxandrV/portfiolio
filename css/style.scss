@@ -278,6 +278,11 @@ section{
         border: none;
     }
 
+    input::placeholder, textarea::placeholder{
+        font-family: 'Conv_renner-medium';
+        font-size: .8rem;
+    }
+
     textarea{
         opacity: .7;
         border-radius: 5px;

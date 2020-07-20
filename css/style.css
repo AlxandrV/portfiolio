@@ -262,6 +262,10 @@ section {
   margin-bottom: 10px;
   border: none;
 }
+.form input::placeholder, .form textarea::placeholder {
+  font-family: "Conv_renner-medium";
+  font-size: 0.8rem;
+}
 .form textarea {
   opacity: 0.7;
   border-radius: 5px;
