@@ -1,5 +1,4 @@
 <?php
-var_dump($post);
 $from = $_POST['mail'];
 
 $to      = 'a.vigneaud@gmail.com';

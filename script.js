@@ -22,13 +22,12 @@ disable.addEventListener('click', () => {
 });
 
 // Ajax form contact
-let form = document.getElementById('ajaxReq');
+let form = document.querySelector('#ajaxReq');
 
 form.addEventListener('submit', function(e){
     e.preventDefault();
 		
     let formData = new FormData(form);
-    console.log(formData);
 	
     const xhr = new XMLHttpRequest();
     xhr.open("POST", "contact.php", true);
