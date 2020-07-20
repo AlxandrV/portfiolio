@@ -191,8 +191,8 @@ section {
   font-size: var(--size-title);
 }
 .content-section h3 {
-  font-size: 2rem;
-  margin-bottom: 3rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 .content-section span {
   display: block;
@@ -365,11 +365,15 @@ section {
   .right {
     margin-right: 5%;
   }
+
+  #icon > img {
+    height: 150px;
+    width: auto;
+  }
 }
 @media (max-width: 991.98px) {
-  #icon > img {
-    height: 120px;
-    width: auto;
+  #icon {
+    display: none;
   }
 }
 @media (max-width: 777.98px) {
@@ -390,6 +394,10 @@ section {
 
   .illustration-content {
     display: none;
+  }
+
+  .btn.cv {
+    margin-top: 15px;
   }
 
   .media-min {
@@ -415,7 +423,7 @@ section {
     margin: 10px;
   }
 
-  #icon, .maps-content {
+  .maps-content {
     display: none;
   }
 }
@@ -441,6 +449,10 @@ section {
 
   .content-section p {
     line-height: 1.5rem;
+  }
+
+  h3 {
+    margin-top: 0;
   }
 }
 
