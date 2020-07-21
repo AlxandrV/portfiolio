@@ -244,9 +244,11 @@ section{
 .maps-content{
     margin-right: 5%;
     max-width: calc(50% - 10%);
-    position: relative;
-    z-index: -1;
     height: 75vh;
+    iframe{
+        box-shadow: 0 80px 140px -40px rgba(0, 0, 0, 0.6);
+    }
+
 }
 
 .separate{
@@ -326,12 +328,12 @@ section{
     position: relative;
     z-index: -1;
     height: 75vh;
-
+    
     p{
         width: 100%;
         height: 100%;
         overflow: hidden;
-
+        box-shadow: 0 80px 140px -40px rgba(0, 0, 0, 0.6);
         img{
             width: 100%;
             height: auto;
