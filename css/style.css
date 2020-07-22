@@ -371,7 +371,7 @@ section {
 }
 @keyframes scroll {
   0% {
-    transform: translateX(1008px);
+    transform: translateX(calc(168px * 6));
   }
   100% {
     transform: translateX(calc(-168px * 9));
