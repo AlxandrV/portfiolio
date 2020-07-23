@@ -230,16 +230,23 @@ section{
         font-size: var(--size-paragraph);
         line-height: 2rem;
         margin-top: 0;
-        &.citation{
-            font-size: 1rem;
-        }
 
         a:hover{
             color: var(--secondary-color);
             transition: .5s;
         }
     }
+
+    .list-icon{
+        padding-left: 5%;
+        list-style-image: url("../media/icon-list.png");
+        list-style-position: inside;
+        li{
+            font-size: var(--size-paragraph);
+        }
+    }
 }
+
 
 .maps-content{
     margin-right: 5%;
@@ -275,25 +282,30 @@ section{
         opacity: .7;
         height: 2rem;
         border-radius: 5px;
-        padding: 3px 10px;
-        margin-bottom: 10px;
+        padding: 0 10px;
+        margin-bottom: 5px;
         border: none;
+        height: 50px;
+        font-size: var(--size-paragraph);
     }
 
     input::placeholder, textarea::placeholder{
         font-family: 'Conv_renner-medium';
-        font-size: .8rem;
+        font-size: var(--size-paragraph);
     }
 
     textarea{
         opacity: .7;
         border-radius: 5px;
         border: none;
-        padding: 5px 10px;
+        padding: 15px 10px;
         box-sizing: border-box;
+        margin-bottom: 5px;
+        font-size: var(--size-paragraph);
     }
 
     input[type="submit"]{
+        margin: 15px 0 0;
         height: 45px;
         background-color: var(--secondary-color);
         padding: 13px 25px;
@@ -413,7 +425,7 @@ section{
 }
 
 //SLIDER LOGOS
-$animationSpeed: 10s;
+$animationSpeed: 30s;
 
 // Animation
 @keyframes scroll {
@@ -476,6 +488,7 @@ $animationSpeed: 10s;
         p{
             line-height: 1.5rem;
         }
+
     }
 
     .right{
@@ -493,6 +506,38 @@ $animationSpeed: 10s;
     .slider, #icon{
     display: none;
     }
+
+    #project .content-section{
+        max-width: 100%;
+        margin: 0 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+        text-align: center;    
+        .list-icon{
+            text-align: left;
+        }  
+    }
+
+    #project .illustration-content{
+        display: none;
+    }
+
+    #contact .content-section{
+        max-width: 100%;
+        margin: 0 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+        text-align: center;    
+    }
+    .maps-content{
+        display: none;
+    }
+
+
 }
 
 @media(max-width: 777.98px){
@@ -513,8 +558,9 @@ $animationSpeed: 10s;
         flex-direction: column;
         justify-content: center;
         align-items: center;  
-        text-align: center;      
+        text-align: center;    
     }
+
 
     .illustration-content{
         display: none;
@@ -548,11 +594,6 @@ $animationSpeed: 10s;
     
         }
     }
-
-    .maps-content{
-        display: none;
-    }
-
 
 }
 
