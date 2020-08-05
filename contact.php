@@ -1,6 +1,6 @@
 <?php    	   	
 // Ma clé privée
-$secret = "6LfXlLQZAAAAAJ4ye36G6mjXlqaWpIs6FvFvE4_Z";
+$secret = "";
 // Paramètre renvoyé par le recaptcha
 $response = $_POST['g-recaptcha-response'];
 // On récupère l'IP de l'utilisateur
