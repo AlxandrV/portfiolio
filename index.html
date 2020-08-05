@@ -77,7 +77,7 @@
                         <li>Site responsive</li>
                     </ul>
                     <div class="btn">
-                        <a href="/natural_coach/index.php" target="_blank" rel="noopener noreferrer">Voir le projet</a>
+                        <a href="www.natural-coach.vigneaud-alexandre.ovh" target="_blank" rel="noopener noreferrer">Voir le projet</a>
                     </div>
                 </div>
                 <div class="illustration-content">
@@ -96,7 +96,7 @@
                     </div>
                     <p class="citation">"La beauté déteste les idées. Elle se suffit à elle-même. une oeuvre est belle comme quelqu'un est beau. Cette beauté dont je parle provoque une érection de l'âme. une érection ne se discute pas" - Jean Cocteau.</p>
                     <div class="btn cv">
-                        <a href="#" target="_blank" rel="noopener noreferrer">Mon CV</a>
+                        <a href="CV_VIGNEAUD_Alexandre.pdf" target="_blank" rel="noopener noreferrer">Mon CV</a>
                     </div>
                     <div class="slider">
                         <div class="wrap">
@@ -114,7 +114,7 @@
                 </div>
                 <div class="content-section right d-flex column">
                     <h3>Passionné et créatif</h3>
-                    <p>Adepte du vintage dans ma vie comme dans mon travaille, celui-ci à pour but d'allier des solutions innovantes, de manière la plus simple et compréhensible possible.<br/>Privilégiant l'expérience utilisateur à la facilité technique, j'estime que chaque projet doit être unique et avoir une image qui lui est propre.</p>
+                    <p>J'ai pour but d'allier des solutions innovantes, de manière la plus simple et compréhensible possible.<br/>Privilégiant l'expérience utilisateur à la facilité technique, j'estime que chaque projet doit être unique et avoir une image qui lui est propre.</p>
                     <p>Je réalise des intégations web responsive, ainsi que des systèmes de gestion de base de données.</p>
                     <div class="d-flex jc-between w-100" id="icon">
                         <img src="media/computer.png" alt="Image d'un écran pc fixe et à côté un écran de pc portable" width="200" height="200">
@@ -127,6 +127,7 @@
         <section class="section" data-anchor="contact" id="contact">
             <div class="d-flex jc-between align-center media-min">
                 <div class="content-section">
+                    <div class="bc-white"></div>
                     <h2 class="margin-none">Contact</h2>
                     <div class="d-flex separate">
                         <span></span>
@@ -134,10 +135,10 @@
                     </div>
                     <form id="ajaxReq" class="d-flex column form">
                         <input type="email" name="mail" id="mail" placeholder="Votre adresse mail" required>
-                        <input type="text" name="object" id="object" placeholder="Object" required>
+                        <input type="text" name="object" id="object" placeholder="Objet" required>
                         <textarea name="message" id="message" cols="30" rows="5" placeholder="Votre message" required></textarea>
                         <p id="hidden">Message envoyé.</p>
-                        <div class="g-recaptcha" data-sitekey="6LfXlLQZAAAAAEe8ydsF7Ru6uWHwarxePdD-gNJI"></div>        
+                        <div class="g-recaptcha end" data-sitekey="6LfXlLQZAAAAAEe8ydsF7Ru6uWHwarxePdD-gNJI"></div>        
                         <input type="submit" value="Envoyer" class="btn">
                     </form>
                     <div class="d-flex social-links short-media">
@@ -146,7 +147,9 @@
                     </div>
 
                 </div>
-                <div class="maps-content w-100" id="map"></div>
+                <div class="maps-content d-flex jc-center align-center w-100">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122552.18680528399!2d5.935715079647406!3d47.25479746398237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478d62faf0ee130b%3A0x409ce34b313ed30!2s25000%20Besan%C3%A7on!5e0!3m2!1sfr!2sfr!4v1595772774804!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
             </div>
         </section>        
     </main>
@@ -157,7 +160,6 @@
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
     crossorigin="anonymous"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXShsCWRaCsgKo1QwVA1-Xx3jLvo698Bo&callback=initMap"></script>
     <script src="script.js"></script>
 </body>
 </html>
